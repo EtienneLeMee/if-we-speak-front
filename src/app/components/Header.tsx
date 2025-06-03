@@ -26,8 +26,8 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             <Link href="/#recentes" className="text-sm/6 lg:text-base font-semibold text-white relative transition duration-200 ease-in-out hover:text-gray-300 hover:after:w-full after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300">Nos vidéos</Link>
-            <a href="#" className="text-sm/6 lg:text-base font-semibold text-white relative transition duration-200 ease-in-out hover:text-gray-300 hover:after:w-full after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300">Note histoire</a>
-            <a href="#" className="text-sm/6 lg:text-base font-semibold text-white relative transition duration-200 ease-in-out hover:text-gray-300 hover:after:w-full after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300">Notre équipe</a>
+            <Link href="/notre-histoire" className="text-sm/6 lg:text-base font-semibold text-white relative transition duration-200 ease-in-out hover:text-gray-300 hover:after:w-full after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300">Note histoire</Link>
+            <Link href="/notre-equipe" className="text-sm/6 lg:text-base font-semibold text-white relative transition duration-200 ease-in-out hover:text-gray-300 hover:after:w-full after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300">Notre équipe</Link>
           </div>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -38,10 +38,10 @@ export default function Header() {
         <div className={`lg:hidden`} role="dialog" aria-modal="true">
           <div className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transform transition-transform duration-300 ease-in-out ${isSmMenuVisible ? 'translate-x-0' : 'translate-x-full'}`}>
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">If We Speak</span>
                 <img className="h-14 w-auto rounded-xl" src="logo-iws.png" alt="" />
-              </a>
+              </Link>
               <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700" onClick={() => setSmMenuIsVisible(false)}>
                 <span className="sr-only">Fermer le menu</span>
                 <svg className="size-10" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
@@ -52,9 +52,9 @@ export default function Header() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">Nos vidéos</a>
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">Notre histoire</a>
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100">Notre équipe</a>
+                  <Link href="/#recentes" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100" onClick={() => setSmMenuIsVisible(false)}>Nos vidéos</Link>
+                  <Link href="/notre-histoire" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100" onClick={() => setSmMenuIsVisible(false)}>Notre histoire</Link>
+                  <Link href="/notre-equipe" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-100" onClick={() => setSmMenuIsVisible(false)}>Notre équipe</Link>
 
                 </div>
                 <div className="py-6">

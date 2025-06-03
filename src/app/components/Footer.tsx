@@ -10,7 +10,8 @@ const Footer = () => {
                 {/* Bloc 1 : À propos */}
                 <div>
                     <h2 className="text-lg font-semibold mb-2">If We Speak</h2>
-                    <p className="text-gray-400">© 2025 If We Speak. <br/> Tous droits réservés.</p>
+                    <p className="text-gray-400 pb-4">© 2025 If We Speak. <br/> Tous droits réservés.</p>
+                    <Link href="etiennelemee.fr" className="text-gray-400">Développé par : <span className="underline">Etienne Le Mée</span></Link>
                     {/* <p className="text-gray-400 mt-1">SIRET : 123 456 789 00012</p> */}
                 </div>
 

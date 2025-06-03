@@ -29,3 +29,57 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+/* Personnalisation fine de la scrollbar */
+.scrollbar-custom {
+  scrollbar-width: thin; /* Pour Firefox */
+  scrollbar-color: #999 transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 6px;
+  border: 2px solid transparent; /* Pour ne pas déborder */
+  background-clip: content-box;
+}
+
+/* Hide scrollbar */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+/* Twitter Embed */
+.twitter-tweet {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Swipper */
+.swiper-wrapper {
+width: 100%;
+height: max-content !important;
+padding-bottom: 64px !important;
+-webkit-transition-timing-function: linear !important;
+transition-timing-function: linear !important;
+position: relative;
+}
+.swiper-pagination-bullet {
+background: #4f46e5;
+}

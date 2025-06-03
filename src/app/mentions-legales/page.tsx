@@ -3,7 +3,9 @@ import Link from "next/link";
 // app/mentions-legales/page.tsx
 export default function MentionsLegales() {
   return (
-    <div className="relative max-w-3xl mx-auto px-8 py-8 my-32 text-white bg-white/15 backdrop-blur-sm rounded-4xl shadow-lg">
+            <div className="relative isolate px-8 pt-16 pb-16">
+
+    <div className="relative max-w-3xl mx-auto my-8 p-8 sm:my-48 lg:my-24 lg:py-24 text-white bg-white/15 backdrop-blur-sm rounded-4xl shadow-lg">
       <h1 className="text-3xl font-bold mb-6">Mentions légales</h1>
 
       <section className="mb-8">
@@ -57,6 +59,7 @@ export default function MentionsLegales() {
           dans le cadre d’un échange volontaire.
         </p>
       </section>
+    </div>
     </div>
   );
 }

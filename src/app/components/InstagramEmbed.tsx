@@ -27,8 +27,7 @@ export default function InstagramEmbed({ url }: { url: string }) {
           boxShadow: '0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)',
           margin: '1px',
           padding: 0,
-          width: '99.375%',
-          maxWidth: '325px', minWidth: '225px', height: '565px'
+          maxWidth: '325px', minWidth: '325px', height: '565px'
         }}
       ></blockquote>
     </div>
